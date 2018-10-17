@@ -3,8 +3,8 @@
         <div class="header--top">
             <div class="nav__container">
                 <div class="header__mobile">
-                    <a class="toggleLink" @click="handleMenu"><img src="/img/logo.png" class="toggle" alt="Toggle menu" /></a>
-                    <p class="mobileName" >Marco Poleto</p>
+                    <a class="toggleLink" @click="handleMenu"><img src="/img/toggle.svg" class="toggle" alt="Toggle menu" /></a>
+                    <p class="mobileName" >Marco Poletto</p>
                 </div>
                 <nav>
                     <ul>
