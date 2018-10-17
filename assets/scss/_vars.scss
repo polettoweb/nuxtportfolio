@@ -14,6 +14,7 @@ $font-size: 0.9rem;
 $family-primary: 'Titillium Web', sans-serif, sans-serif;
 $family-secondary: 'Marck Script', cursive;
 $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+$box-shadow-purple: 0 2px 15px 0 lighten($purple, 30%), 0 2px 16px 0 lighten($purple, 30%);
 $linear-gradient: linear-gradient(-40deg, $azure, $purple);
 $base-transition: all cubic-bezier(.17, .67, .5, 1) 0.3s;
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);

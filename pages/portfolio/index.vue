@@ -70,10 +70,15 @@
 </template>
 
 <script>
-import PortfolioItem from '@/components/partials/PortfolioItem.vue';
+import PortfolioItem from "@/components/partials/PortfolioItem.vue";
 export default {
-  components: {
-    PortfolioItem
-  }
-}
+    components: {
+        PortfolioItem
+    },
+    head() {
+        return {
+            title: "Portfolio - Marco Poletto Portfolio"
+        };
+    }
+};
 </script>

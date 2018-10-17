@@ -17,25 +17,29 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from "axios";
 export default {
     data() {
         return {
             loading: true,
-            article: '',
-            articles: ''
-        }
+            article: "",
+            articles: ""
+        };
     },
     created() {
-        console.log(this.$route.params.slug);
-        const url = 'https://marcopolettouk.firebaseio.com/articles/.json';
+        const url = "https://marcopolettouk.firebaseio.com/articles/.json";
         axios(url)
-        .then(res => {
-            this.article = res.data.filter(el => el.slug === this.$route.params.slug)[0]
-        })
-        .finally(() => {
-            this.loading = false;
-        })
+            .then(res => {
+                this.article = res.data.filter(el => el.slug === this.$route.params.slug)[0];
+            })
+            .finally(() => {
+                this.loading = false;
+            });
+    },
+    head() {
+        return {
+            title: `${this.article} - Marco Poletto Portfolio`
+        };
     }
-}
+};
 </script>

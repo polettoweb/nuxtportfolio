@@ -17,11 +17,11 @@
           </div>
       </section>
       <section class="home__container">
-          <!-- <section class="home__carousel">
+          <section class="home__carousel">
               <h3>Recent Works</h3>
               <HomeSlider />
               
-          </section>  -->
+          </section> 
           <section class="cards__container">
               <h3>Services</h3>
               <div class="cards">
@@ -38,25 +38,33 @@
 </template>
 
 <script>
-import Card from '@/components/partials/Card.vue';
-// import HomeSlider from '../components/partials/HomeSlider.vue';
+import Card from "@/components/partials/Card.vue";
+import HomeSlider from "@/components/partials/HomeSlider.vue";
 
-const designText = "Creation of Logos and brand identities. Designing websites starting from wireframes and mock-ups for a totally customizable experience.";
-const codeText = "Writing clean code for best performance and high scalability. Using the latest technologies, I write code whether if it's completely custom, or using cms like Magento and Wordpress.";
-const seoText = "Service of optimization for your existing website. I can work on the existing code for the optimization of the code and for improvement in search engines' results.";
-const cvHref = '/pdfs/marco-poletto-cv.pdf';        
+const designText =
+    "Creation of Logos and brand identities. Designing websites starting from wireframes and mock-ups for a totally customizable experience.";
+const codeText =
+    "Writing clean code for best performance and high scalability. Using the latest technologies, I write code whether if it's completely custom, or using cms like Magento and Wordpress.";
+const seoText =
+    "Service of optimization for your existing website. I can work on the existing code for the optimization of the code and for improvement in search engines' results.";
+const cvHref = "/pdfs/marco-poletto-cv.pdf";
 export default {
-  data: function() {
-    return {
-      designText,
-      codeText,
-      seoText,
-      cvHref
+    data: function() {
+        return {
+            designText,
+            codeText,
+            seoText,
+            cvHref
+        };
+    },
+    components: {
+        Card,
+        HomeSlider
+    },
+    head() {
+        return {
+            title: "Homepage - Marco Poletto Portfolio"
+        };
     }
-  },
-  components: {
-    Card,
-    // HomeSlider
-  }
-}
+};
 </script>

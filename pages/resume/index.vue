@@ -49,8 +49,8 @@
               <ProgressBar bar-color="#4db2b3" size="small" :val="90" />
               <p>Email Development - 90%</p>
               <ProgressBar bar-color="#4db2b3" size="small" :val="90" />
-              <p>Reactive Development - 85%</p>
-              <ProgressBar bar-color="#4db2b3" size="small" :val="85" />
+              <p>Reactive Development - 90%</p>
+              <ProgressBar bar-color="#4db2b3" size="small" :val="90" />
               <p>Prototyping - 85%</p>
               <ProgressBar bar-color="#4db2b3" size="small" :val="85" />
               <p>UX/UI Design - 90%</p>
@@ -67,8 +67,8 @@
               <ProgressBar bar-color="#4db2b3" size="small" :val="70" />
               <p>HTML / CSS - 100%</p>
               <ProgressBar bar-color="#4db2b3" size="small" :val="100" />
-              <p>Reactive Frameworks (React, VueJS) - 85%</p>
-              <ProgressBar bar-color="#4db2b3" size="small" :val="85" />
+              <p>Reactive Frameworks (React, VueJS) - 90%</p>
+              <ProgressBar bar-color="#4db2b3" size="small" :val="90" />
               <p>Prototyping Tools (Proto.io, Invision) - 80%</p>
               <ProgressBar bar-color="#4db2b3" size="small" :val="80" />
               <p>Adobe Creative Suite - 70%</p>
@@ -110,18 +110,18 @@
 <script>
 import ExpCard from "@/components/partials/ExpCard.vue";
 import Skill from "@/components/partials/Skill.vue";
-import ProgressBar from 'vue-simple-progress';
+import ProgressBar from "vue-simple-progress";
 
 const shootText =
-      "Maintenance and development of the frontend part of various websites with or without CMS. Develop, refinement and management of the automated development environment (Gulp, GIT, Webpack, browsersynch, etc), of RESTful APIs between Wordpress and other services such as OpenWeather and social networks. Specialisation in Frontend Development and UX experience.";
+    "Maintenance and development of the frontend part of various websites with or without CMS. Develop, refinement and management of the automated development environment (Gulp, GIT, Webpack, browsersynch, etc), of RESTful APIs between Wordpress and other services such as OpenWeather and social networks. Specialisation in Frontend Development and UX experience.";
 const galtoneText =
     "Maintenance and development of e-commerce websites. My role covers all aspect of development new websites based in Magento and Wordpress. From the creation of the development environment to the release in production. I am specialized in Front end development but I work on the backend too. We use code versioning and I am coordinating in-house and external developers to merge the code into the final product.";
 const freelanceText =
     "The beginning of my developer career. A freelance role that allows me to develop projects from the wireframe to the production code. Managing clients and their expectations. Work independently and with tight deadProgressBars.";
 const missText =
-      "I was part of a big project for migrating a strong and solid website into a new era. As part of the team I was maintening the two company websites (Missguided and Mennace), improving performance, updating/refactoring the code and mentoring more junior developers with a pair programmimg system.";
+    "I was part of a big project for migrating a strong and solid website into a new era. As part of the team I was maintening the two company websites (Missguided and Mennace), improving performance, updating/refactoring the code and mentoring more junior developers with a pair programmimg system.";
 const magText =
-      "A new exciting adventure is starting now. Being part of such a big organization and working with cutting edge technology will end up being an epic challenge that I am happy to enjoy"
+    "A new exciting adventure is starting now. Being part of such a big organization and working with cutting edge technology will end up being an epic challenge that I am happy to enjoy";
 export default {
     data: function() {
         return {
@@ -130,13 +130,17 @@ export default {
             freelanceText,
             missText,
             magText
-        }
-        
+        };
     },
     components: {
         ExpCard,
         Skill,
         ProgressBar
+    },
+    head() {
+        return {
+            title: "Resume - Marco Poletto Portfolio"
+        };
     }
-}
+};
 </script>

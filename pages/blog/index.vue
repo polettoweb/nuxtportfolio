@@ -20,28 +20,29 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from "axios";
 export default {
     data() {
         return {
             loading: true,
             articles: []
-        }
+        };
     },
     created() {
-        axios('https://marcopolettouk.firebaseio.com/articles/.json')
-        // .then(res => {
-        //     return res.json();
-        // })
-        .then(res => {
-            console.log(res)
-            this.articles = res.data;
-        })
-        .finally(() => {
-            this.loading = false;
-        })
+        axios("https://marcopolettouk.firebaseio.com/articles/.json")
+            .then(res => {
+                this.articles = res.data;
+            })
+            .finally(() => {
+                this.loading = false;
+            });
+    },
+    head() {
+        return {
+            title: "Blog - Marco Poletto Portfolio"
+        };
     }
-}
+};
 </script>
 
 
