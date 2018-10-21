@@ -14,8 +14,8 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
-    "nuxt": "^1.0.0",
-    "vue-carousel": "^0.14.0",
+    "nuxt": "^2.2.0",
+    "tiny-cookie": "^2.1.2",
     "vue-simple-progress": "^1.1.0"
   },
   "devDependencies": {
