@@ -1,4 +1,5 @@
 const pkg = require("./package");
+const axios = require('axios');
 
 module.exports = {
   mode: "universal",
@@ -64,5 +65,15 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {}
+  },
+  generate: {
+    routes: function() {
+      return axios("https://marcopolettouk.firebaseio.com/articles/.json")
+      .then(res => {
+        const routes = [];
+        res.data.map(item => routes.push('/blog/' + item.slug))
+        return routes;
+      })
+    }
   }
 };

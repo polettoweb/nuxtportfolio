@@ -25,7 +25,7 @@ export default {
                     text: "This portfolio using React.JS as framework.",
                     image: "react.png",
                     tags: "React.JS, React-router, Sass",
-                    link: "https://github.com/polettoweb/reactportfolio",
+                    link: "https://reactmarcopoletto.netlify.com",
                     linkTitle: "React portfolio Github repository",
                     linkGit: "https://github.com/polettoweb/reactportfolio",
                     linkGitTitle: "React portfolio Github repository"
@@ -34,7 +34,7 @@ export default {
                     text: "Second version of the portfolio using Nuxt.JS as framework.",
                     image: "nuxtCover.jpg",
                     tags: "Nuxt.JS, Vue.JS, Vuex, Sass",
-                    link: "https://nuxt.marcopoletto.co.uk",
+                    link: "https://nuxtmarcopoletto.netlify.com",
                     linkTitle: "Marco Poletto Nuxt.JS",
                     linkGit: "https://github.com/polettoweb/nuxtportfolio",
                     linkGitTitle: "Nuxt portfolio Github repository"
@@ -43,17 +43,17 @@ export default {
                     text: "First version of the portfolio using Vue.JS as framework.",
                     image: "vue.jpg",
                     tags: "Vue.JS, Vuex, Sass",
-                    link: "https://vue.marcopoletto.co.uk",
+                    link: "https://vuemarcopoletto.netlify.com",
                     linkTitle: "Marco Poletto Vue.JS",
                     linkGit: "https://github.com/polettoweb/vueportfolio",
                     linkGitTitle: "Vue portfolio Github repository"
                 },
                 {
-                    text: "Small example of ecommerce functionality in Vue.JS",
+                    text: "Small example of ecommerce functionality in Vue.JS and Node",
                     image: "vueCover.jpg",
-                    tags: "Vue.JS, vue-resource, Imageur API",
+                    tags: "Vue.JS, Node.JS, vue-resource, Imageur API",
                     link: "https://small-ecommerce-example-vuejs-ldaubcucrv.now.sh/",
-                    linkTitle: "Small ecommerce example in Vue.JS",
+                    linkTitle: "Small ecommerce example in Vue.JS and Node.JS",
                     linkGit: "https://github.com/polettoweb/vue-small-ecommerce",
                     linkGitTitle: "Vue eCommerce Github repository"
                 },

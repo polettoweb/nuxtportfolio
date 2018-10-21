@@ -101,8 +101,8 @@
 
         <div class="home__me">
           <div class="resume__buttons">
-            <a class="button" href="https://marcopoletto.co.uk/marco-poletto-cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-            <a class="button" href="mailto:marco@marcopoletto.co.uk">Contact Me</a>
+            <a class="button" href="/pdfs/marco-poletto-cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+            <a class="button" href="mailto:marco@marcopoletto.eu">Contact Me</a>
           </div>
         </div>
       </section>

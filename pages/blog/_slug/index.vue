@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!loading" class="blog__container">
+    <div v-if="!$store.state.loading" class="blog__container">
         <section>
             <h1>{{article.title}}</h1>
             <div class="blog__image">
@@ -7,7 +7,6 @@
             </div>
             <div class="blog__post">
                 <p>{{article.content}}</p>
-                <code>function() { console.log}</code>
             </div>
             
         </section>
@@ -17,24 +16,18 @@
     </div>
 </template>
 <script>
-import axios from "axios";
 export default {
     data() {
         return {
-            loading: true,
-            article: "",
-            articles: ""
+            article: ""
         };
     },
+    beforeCreate() {
+        this.$store.commit("retrieveList");
+        console.log(this.article);
+    },
     created() {
-        const url = "https://marcopolettouk.firebaseio.com/articles/.json";
-        axios(url)
-            .then(res => {
-                this.article = res.data.filter(el => el.slug === this.$route.params.slug)[0];
-            })
-            .finally(() => {
-                this.loading = false;
-            });
+        this.article = this.$store.state.articles.filter(el => el.slug === this.$route.params.slug)[0];
     },
     head() {
         return {

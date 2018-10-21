@@ -6,7 +6,7 @@
               <a href="https://twitter.com/polettoweb" title="Twitter Page" target="_blank" rel="noopener noreferrer"><i class="ion-social-twitter"></i></a>
               <a href="https://www.linkedin.com/in/marco-poletto-96853774/" title="Linkedin Page" target="_blank" rel="noopener noreferrer"><i class="ion-social-linkedin"></i></a>
               <a href="https://plus.google.com/+MarcoPoletto" title="Google+ Page" target="_blank" rel="noopener noreferrer"><i class="ion-social-googleplus"></i></a>
-              <a href="mailto:marco@marcopoletto.co.uk" title="Contact me via email"><i class="ion-email"></i></a>
+              <a href="mailto:marco@marcopoletto.eu" title="Contact me via email"><i class="ion-email"></i></a>
           </div>
           <div class="home__me">
               <h1>Hello, my name is Marco, I'm a <strong>Web Developer </strong>and a <strong>Frontend </strong><strong>Engineer</strong>.</h1><p> I create websites from scratch using the latest cutting edge web technologies. <strong>Innovation</strong>, <strong>clean code</strong> and <strong>pixel perfect</strong> results characterize all my projects. With attention to details, I always deliver the best solution to the clients according to their requirements.</p>
@@ -30,7 +30,7 @@
                       <Card title="SEO &amp; Optimisation" logo="/img/analysis.svg" :text="seoText" />
               </div>
               <div class="cards__buttons">
-                  <a class="button" title="Contact Me" href="mailto:marco@marcopoletto.co.uk">Contact Me</a>                        
+                  <a class="button" title="Contact Me" href="mailto:marco@marcopoletto.eu">Contact Me</a>                        
               </div>
           </section>
       </section>

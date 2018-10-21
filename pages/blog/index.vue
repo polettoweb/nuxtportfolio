@@ -2,8 +2,8 @@
     <div class="blog-cat__home">
         <h1>Blog</h1>
         <div class="blog-cat__container">
-            <h2 v-if="loading">Please wait while the contentg is loading...</h2>
-            <article v-if="!loading" v-for="article in articles" :key="article.id" class="blog-cat__post">
+            <h2 v-if="$store.state.loading">Please wait while the contentg is loading...</h2>
+            <article v-if="!$store.state.loading" v-for="article in $store.state.articles" :key="article.id" class="blog-cat__post">
                 <nuxt-link :to="`/blog/${article.slug}`" :title="article.slug">
                     <div class="blog-cat__image">
                         <img :src="article.thumbnail" alt="" class="blog-cat__image">
@@ -20,23 +20,7 @@
     </div>
 </template>
 <script>
-import axios from "axios";
 export default {
-    data() {
-        return {
-            loading: true,
-            articles: []
-        };
-    },
-    created() {
-        axios("https://marcopolettouk.firebaseio.com/articles/.json")
-            .then(res => {
-                this.articles = res.data;
-            })
-            .finally(() => {
-                this.loading = false;
-            });
-    },
     head() {
         return {
             title: "Blog - Marco Poletto Portfolio"

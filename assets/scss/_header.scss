@@ -1,16 +1,17 @@
 header {
   height: 40vh;
+  min-height: 500px;
   background-color: darken($azure, 10%);
   background-image: url("/img/hero.jpg");
   background-position: center;
   background-size: cover;
   .logo {
-    width: 15vh;
-    height: 15vh;
-    @media (max-width: 767px) {
-      width: 20vh;
-      height: 20vh;
-    }
+    width: 150px;
+    height: 150px;
+    // @media (max-width: 767px) {
+    //   width: 20vh;
+    //   height: 20vh;
+    // }
   }
 }
 
@@ -29,6 +30,7 @@ header {
     width: 50px;
     height: 50px;
     text-align: left;
+    cursor: pointer;
     img {
       width: 40px;
       height: 40px;
@@ -137,16 +139,16 @@ nav {
     border: 4px solid #efefef;
     position: absolute;
     z-index: 99;
-    top: 40vh;
+    top: 500px;
     left: 50%;
-    width: 15vh;
-    height: 15vh;
+    width: 150px;
+    height: 150px;
     transform: translate3d(-50%, -50%, 0);
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     @media (max-width: 767px) {
-      top: 35vh;
-      width: 20vh;
-      height: 20vh;
+      // top: 35vh;
+      // width: 20vh;
+      // height: 20vh;
     }
   }
   &__mobile {
