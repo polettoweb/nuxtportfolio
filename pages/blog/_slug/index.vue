@@ -19,19 +19,12 @@
 export default {
     data() {
         return {
-            article: ""
+            article: this.$store.state.articles.filter(el => el.slug === this.$route.params.slug)[0]
         };
-    },
-    beforeCreate() {
-        this.$store.commit("retrieveList");
-        console.log(this.article);
-    },
-    created() {
-        this.article = this.$store.state.articles.filter(el => el.slug === this.$route.params.slug)[0];
     },
     head() {
         return {
-            title: `${this.article} - Marco Poletto Portfolio`
+            title: `${this.article.title} - Marco Poletto Portfolio`
         };
     }
 };

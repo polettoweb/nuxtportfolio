@@ -6,13 +6,9 @@ const createStore = () => {
         state: () => ({
             loading: true,
             articles: [],
-            article: '',
             year: new Date().getFullYear()
         }),
         actions: {
-            retrieveList(vuexContext) {
-                vuexContext.commit('setPosts', posts)
-            },
             nuxtServerInit() {
                 return axios("https://marcopolettouk.firebaseio.com/articles/.json")
                     .then(res => {
