@@ -1,12 +1,12 @@
 const pkg = require("./package");
-const axios = require('axios');
+const axios = require("axios");
 
 module.exports = {
   mode: "universal",
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: pkg.description,
     meta: [
@@ -33,47 +33,46 @@ module.exports = {
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: "#FFFFFF" },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: ["~assets/app.css"],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [],
 
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    ['@nuxtjs/google-analytics']
-  ],
-  'google-analytics': {
-    id: 'UA-61997681-5',
+   ** Nuxt.js modules
+   */
+  modules: [["@nuxtjs/google-analytics"]],
+  "google-analytics": {
+    id: "UA-61997681-5",
     disabled: this.load
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {}
   },
   generate: {
     routes: function() {
-      return axios("https://marcopolettouk.firebaseio.com/articles/.json")
-      .then(res => {
-        const routes = [];
-        res.data.map(item => routes.push('/blog/' + item.slug))
-        return routes;
-      })
+      return axios("https://marcopolettouk.firebaseio.com/articles/.json").then(
+        res => {
+          const routes = [];
+          res.data.map(item => routes.push("/blog/" + item.slug));
+          return routes;
+        }
+      );
     }
   }
 };
